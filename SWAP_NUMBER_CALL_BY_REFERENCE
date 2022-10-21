@@ -28,4 +28,5 @@ void cyclicSwap(int *A, int *B, int *C)
     *B = *A;
     *A = *C;
     *C = temp;
+
 }
