@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+void cyclicSwap(int *A, int *B, int *C);
+
+int main()
+{
+    int A, B, C;
+
+    cout << "Enter value of a, b and c respectively: ";
+    cin >> A >> B >> C;
+
+    cout << "Value before swapping: " << endl;
+    cout << "A, B and C respectively are: " << A << ", " << B << ", " << C << endl;
+
+    cyclicSwap(&A, &B, &C);
+
+    cout << "Value after swapping numbers in cycle: " << endl;
+    cout << "A, B and C respectively are: " << A << ", " << B << ", " << C << endl;
+
+    return 0;
+}
+
+void cyclicSwap(int *A, int *B, int *C)
+{
+    int temp;
+    temp = *B;
+    *B = *A;
+    *A = *C;
+    *C = temp;
+}
