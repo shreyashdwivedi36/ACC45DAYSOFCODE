@@ -3,16 +3,16 @@ using namespace std;
 
 int main()
 {
-    int n1, n2, max;
+    int A, B, max;
 
     cout << "Enter two numbers: ";
-    cin >> n1 >> n2;
+    cin >> A >> B;
     
-    max = (n1 > n2) ? n1 : n2;
+    max = (A > B) ? A : B;
 
     do
     {
-        if (max % n1 == 0 && max % n2 == 0)
+        if (max % A == 0 && max % B == 0)
         {
             cout << "LCM = " << max;
             break;
