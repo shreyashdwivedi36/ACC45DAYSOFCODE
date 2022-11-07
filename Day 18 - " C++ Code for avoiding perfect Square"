@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void swap(int a,int b){
+    int temp = a;
+       a = b;
+       b = temp;
+}
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	
+	while(t--){
+	    int n;
+	    cin>>n;
+	    
+	    for(int i = n ; i >  0 ; i--){
+	        cout<<i<<" ";
+	    }
+	    cout<<endl;
+	}
+	return 0;
+}
