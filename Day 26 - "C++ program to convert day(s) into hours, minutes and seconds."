@@ -1,0 +1,31 @@
+#include <iostream>  
+using namespace std;  
+  
+void conversion(float days)  
+{  
+    double hours, minutes, seconds;  
+  
+    hours = days * 24;
+    minutes = days * 60 * 24;  
+    seconds = days * 3600 * 24;  
+    if(days < 2 ){
+        cout<<"There are "<< hours << " hours in "<< days <<" day." <<endl;
+        cout<<"There are "<< minutes << " minutes in "<< days <<" day." <<endl;  
+        cout<<"There are "<< seconds << " seconds in "<< days <<" day." <<endl;
+    }
+    else{
+        cout<<"There are "<< hours << " hours in "<< days <<" days." <<endl;
+        cout<<"There are "<< minutes << " minutes in "<< days <<" days." <<endl;  
+        cout<<"There are "<< seconds << " seconds in "<< days <<" days." <<endl;  
+    }
+    
+}  
+int main()  
+{  
+    float days;  
+    cout<<"Enter the value of days: ";  
+    cin>>days;  
+    conversion(days);  
+  
+    return 0;  
+}  
