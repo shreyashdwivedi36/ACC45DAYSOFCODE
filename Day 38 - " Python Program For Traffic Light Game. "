@@ -1,0 +1,62 @@
+print("==================================")
+print("WELCOME TO THE TRAFFIC LIGHT GAME:")
+print("==================================")
+import random
+print("Following are the choice numbers you can choose: \n 1. Red \n 2. Yellow \n 3. Green \n")
+print("-------------------------------------------")
+
+ch = int(input("Now Your turn to choose: "))
+print("-------------------------------------------")
+while ch> 3 or ch< 1:
+   ch = int(input("Wrong input. Enter your valid input here: "))
+   print("-------------------------------------------")
+
+
+if ch == 1:
+   choice_name = 'Red'
+
+elif ch == 2:
+   choice_name = 'Yellow'
+
+else:
+   choice_name = 'Green'
+
+print("Your choice of signal is: " + choice_name)
+print("-------------------------------------------") 
+print("\nNow its computer turn to choose the signal")
+comp_choice = random.randint(1, 3)
+
+while comp_choice == ch:
+    comp_choice = random.randint(1, 3)
+
+if comp_choice == 1:
+   comp_choice_name = 'Red'
+
+elif comp_choice == 2:
+   comp_choice_name = 'Yellow'
+
+else:
+   comp_choice_name = 'Green'
+
+print("-------------------------------------------")
+print("So computer choice of signal is: " + comp_choice_name)
+print("-------------------------------------------")
+
+print("Your choice: " + choice_name + " V/s " + "Computer choice: " +comp_choice_name)
+print("-------------------------------------------")
+
+
+if comp_choice == ch:
+    print("CONGRATULATIONS YOUR GUESS WAS CORRECT...")
+    print("-------------------------------------------")
+
+
+else:
+    print("YOU LOSE!! YOUR GUESS WAS WRONG!")
+    print("-------------------------------------------")
+
+print("\nThanks For Playing The Game...")
+print("-------------------------------------------")
+print("HIT RUN PROGRAM TO TRY AGAIN")
+print("-------------------------------------------")
+print("-------------SHREYASH DWIVEDI--------------")
