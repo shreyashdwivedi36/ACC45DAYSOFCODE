@@ -1,0 +1,20 @@
+import random
+print("----------------GUESSING GAME----------------")
+print("FIRST ATTEMPT IS TRIAL ATTEMPT")
+n = int(input("Enter your number between 1 to 10:"))
+c_n = random.randrange(1, 10)
+print("Computer's choice of number:", c_n)
+attempt = 0
+
+while n != c_n and attempt < 3:
+    attempt = attempt + 1
+    n = int(input("Enter your number between 1 to 10:"))
+    c_n = random.randrange(1, 10)
+    print("Computer's choice of number:", c_n)
+
+    if n == c_n:
+        print("CONGRATULATIONS YOU WIN")
+    elif attempt == 3:
+        print("YOU LOSE BECAUSE YOU'VE EXCEEDED YOUR NUMBER OF ATTEMPTS.")
+    else:
+        print("YOU LOSE, TRY AGAIN")
